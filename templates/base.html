@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--=============================================== 
+    Template Design By WpFreeware Team.
+    Author URI : http://www.wpfreeware.com/
+    ====================================================-->
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WpF Medinova : Home</title>
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="images/favicon.ico" />
+
+    {% include  'layouts/_styles.html' %}
+
+</head>
+
+<body>
+    {% include './layouts/_preloader.html' %}
+    {% include './layouts/_header.html' %}
+    {% include './layouts/_main_slider.html' %}
+    {% include './layouts/_features.html' %}
+    {% include './layouts/_service.html' %}
+    {% include './layouts/_choos_us.html' %}
+    {% include './layouts/_counter.html' %}
+    {% include './layouts/_doctors.html' %}
+    {% include './layouts/_testimonials.html' %}
+    {% include './layouts/_blog.html' %}
+    {% include './layouts/_footer.html' %}
+    {% block content %} {% endblock %}
+    {% include './layouts/_scripts.html' %}
+</body>
+
+</html>
